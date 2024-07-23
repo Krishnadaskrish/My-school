@@ -37,7 +37,7 @@ const AppointmentBooking = () => {
     try {
       const appointmentData = {
         ...formData,
-        student: userId, // Include the student ID from context
+        student: userId, 
       };
       const response = await bookAppointment(appointmentData);
       toast.success('Appointment booked:', response);

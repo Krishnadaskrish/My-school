@@ -12,24 +12,21 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Check if token exists in localStorage on component mount
     const token = localStorage.getItem('token');
     setIsLoggedIn(!!token);
-  }, []); // Empty dependency array to run only on mount
+  }, []); 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleLogout = () => {
-    // Remove token from localStorage
     localStorage.removeItem('token');
     setIsLoggedIn(false);
     navigate('/');
   };
 
   const handleLogin = () => {
-    // Check if token exists in localStorage
     const token = localStorage.getItem('token');
     setIsLoggedIn(!!token);
     setIsLoginModalOpen(false);

@@ -26,7 +26,6 @@ const RegisterModal = ({ isOpen, onClose }) => {
       onClose();
     } catch (error) {
       toast.error('Error registering user:', error);
-      // Handle error (e.g., show an error message)
     }
   };
 

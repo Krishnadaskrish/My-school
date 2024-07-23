@@ -6,18 +6,16 @@ const Carousel = () => {
 
   const slides = [
     {
-      title: 'Slide 1',
-      content: 'Educational content for Slide 1',
+      title: 'My school',
+      content: 'Educational content ',
       image: 'https://via.placeholder.com/800x400?text=Slide+1',
     },
     {
-      title: 'Slide 2',
-      content: 'Educational content for Slide 2',
+     
       image: 'https://via.placeholder.com/800x400?text=Slide+2',
     },
     {
-      title: 'Slide 3',
-      content: 'Educational content for Slide 3',
+      
       image: 'https://via.placeholder.com/800x400?text=Slide+3',
     },
   ];
@@ -41,7 +39,7 @@ const Carousel = () => {
         {slides.map((slide, index) => (
           <div key={index} className="flex-shrink-0 w-full h-[200px] lg:h-80">
             <img
-              src={slide.image}
+              // src={slide.image}
               alt={slide.title}
               className="w-full h-full object-cover"
             />
